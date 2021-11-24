@@ -1,3 +1,26 @@
+" - Setup vim plug
+" sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+"       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+"
+" - for install all plugins:
+" :PlugInstall 
+"
+" - for tagbar:
+" sudo apt install exuberant-ctags
+"
+" - for autocomplit:
+" sudo apt install nodejs
+" sudo apt install npm
+" cd ~/.config/nvim/plugged/coc.nvim/
+" sudo npm install -g yarn
+" yarn install
+" yarn build
+" pip3 install jedi
+" - after use in nvim:
+" :CocInstall coc-python
+"
+"
+"
 :set autoindent
 :set completeopt-=preview
 :set expandtab
@@ -20,9 +43,9 @@ call plug#begin()
 Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'https://github.com/preservim/nerdtree'
-Plug 'https://github.com/tpope/vim-surround'
+Plug 'https://github.com/tpope/vim-surround' "ys
 Plug 'https://github.com/jiangmiao/auto-pairs'
-Plug 'https://github.com/tpope/vim-commentary'
+Plug 'https://github.com/tpope/vim-commentary' "gc gcc
 Plug 'https://github.com/tc50cal/vim-terminal'
 Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/airblade/vim-gitgutter'
